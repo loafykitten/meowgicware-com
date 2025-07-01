@@ -3,7 +3,7 @@ import Image from 'next/image'
 const GameLogos = () => {
     return (
         <section className="bg-zinc-700 py-16">
-            <div className="container mx-auto flex justify-around items-center">
+            <div className="container mx-auto flex flex-col items-center space-y-12 md:flex-row md:justify-around md:space-y-0">
                 {/* Placeholder for Dragon Age logo */}
                 <Image
                     src="/next.svg" // Using next.svg as a placeholder

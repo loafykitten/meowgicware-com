@@ -4,7 +4,7 @@ import React from 'react'
 const Footer: React.FC = () => {
     return (
         <footer className="bg-zinc-900 text-gray-400 py-12 px-6 sm:px-6 lg:px-8 mt-auto flex-grow flex flex-col justify-start">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-8 md:space-y-0">
+            <div className="flex flex-col-reverse md:flex-row justify-between items-start md:items-center">
                 {/* Left Section: Company Logo and Legal Links */}
                 <div className="flex flex-col items-start space-y-4">
                     {/* Placeholder for EA BioWare Logo */}
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* Right Section: Social and Store Links */}
-                <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-16">
+                <div className="mb-12 flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-16">
                     {/* Social Links */}
                     <div>
                         <h3 className="text-white font-bold mb-4">SOCIAL</h3>
