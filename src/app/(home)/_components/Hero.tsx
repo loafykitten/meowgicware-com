@@ -60,24 +60,26 @@ const Hero = () => {
                 <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
                     {currentSlideContent.subText}
                 </p>
-                <button className="bg-transparent border-2 border-white text-white py-3 px-8 text-lg uppercase font-semibold hover:bg-white hover:text-black transition-colors duration-300">
-                    {currentSlideContent.ctaText}
-                </button>
+                <div className="flex flex-col items-center">
+                    <button className="border-2 border-white bg-black/50 text-white py-3 px-8 text-lg uppercase font-semibold hover:bg-white hover:text-black transition-colors duration-300">
+                        {currentSlideContent.ctaText}
+                    </button>
 
-                {/* Slide indicators */}
-                <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3">
-                    {slides.map((_, index) => (
-                        <button
-                            key={index}
-                            className={`w-3 h-3 rounded-full border border-white ${
-                                currentSlide === index
-                                    ? 'bg-white'
-                                    : 'bg-transparent'
-                            }`}
-                            onClick={() => handleSlideClick(index)}
-                            aria-label={`Go to slide ${index + 1}`}
-                        ></button>
-                    ))}
+                    {/* Slide indicators */}
+                    <div className="mt-8 flex space-x-3">
+                        {slides.map((_, index) => (
+                            <button
+                                key={index}
+                                className={`w-3 h-3 rounded-full border border-white ${
+                                    currentSlide === index
+                                        ? 'bg-white'
+                                        : 'bg-transparent'
+                                }`}
+                                onClick={() => handleSlideClick(index)}
+                                aria-label={`Go to slide ${index + 1}`}
+                            ></button>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
