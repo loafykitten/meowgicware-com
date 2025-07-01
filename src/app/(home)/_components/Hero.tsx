@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const slides = [
     {
@@ -31,8 +31,27 @@ const slides = [
 
 const Hero = () => {
     const [currentSlide, setCurrentSlide] = useState(0)
+    const intervalRef = useRef<NodeJS.Timeout | null>(null)
+
+    const startInterval = () => {
+        intervalRef.current = setInterval(() => {
+            setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length)
+        }, 5000)
+    }
+
+    const stopInterval = () => {
+        if (intervalRef.current) {
+            clearInterval(intervalRef.current)
+        }
+    }
+
+    useEffect(() => {
+        startInterval()
+        return () => stopInterval()
+    }, [])
 
     const handleSlideClick = (index: number) => {
+        stopInterval()
         setCurrentSlide(index)
     }
 
