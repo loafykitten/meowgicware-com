@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -7,10 +8,14 @@ const Footer: React.FC = () => {
             <div className="flex flex-col-reverse md:flex-row justify-between items-start md:items-baseline">
                 {/* Left Section: Company Logo and Legal Links */}
                 <div className="flex flex-col items-start space-y-4">
-                    {/* Placeholder for EA BioWare Logo */}
-                    <div className="text-white text-2xl font-bold">
-                        MeowgicWare
-                    </div>
+                    {/* MeowgicWare Logo */}
+                    <Image
+                        src="/logo-text.png"
+                        alt="MeowgicWare Logo"
+                        height={40}
+                        width={150}
+                        className="h-10 w-auto"
+                    />
 
                     {/* Legal Links */}
                     <div className="flex flex-wrap text-sm space-x-4">

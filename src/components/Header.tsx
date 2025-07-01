@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
@@ -11,15 +12,18 @@ const Header: React.FC = () => {
     }
 
     return (
-        <header className="bg-black/90 text-white px-6 md:px-48 py-6 shadow-md fixed w-full z-50">
+        <header className="bg-slate-800/90 text-white px-6 md:px-48 py-6 shadow-md fixed w-full z-50">
             <nav className="flex items-center justify-between flex-wrap">
                 {/* Desktop View */}
                 <div className="hidden md:flex items-center flex-grow">
-                    <Link
-                        href="/"
-                        className="text-3xl font-bold text-white mr-auto"
-                    >
-                        MeowgicWare
+                    <Link href="/" className="mr-auto">
+                        <Image
+                            src="/logo-text.png"
+                            alt="MeowgicWare Logo"
+                            height={40}
+                            width={150}
+                            className="h-10 w-auto"
+                        />
                     </Link>
                     <div className="flex space-x-4">
                         <Link href="/games" className="hover:text-gray-300">
@@ -58,11 +62,14 @@ const Header: React.FC = () => {
                             ></path>
                         </svg>
                     </button>
-                    <Link
-                        href="/"
-                        className="text-2xl font-bold text-white mx-auto"
-                    >
-                        MeowgicWare
+                    <Link href="/" className="mx-auto">
+                        <Image
+                            src="/logo-text.png"
+                            alt="MeowgicWare Logo"
+                            height={40}
+                            width={150}
+                            className="h-10 w-auto"
+                        />
                     </Link>
                     <div></div>{' '}
                     {/* Placeholder for right alignment in mobile */}
