@@ -40,7 +40,7 @@ const Hero = () => {
     const imageUrl = `https://picsum.photos/seed/${currentSlide}/1920/1080` // Dynamic image based on slide index
 
     return (
-        <section className="relative h-[600px] flex items-center justify-center text-white overflow-hidden">
+        <section className="relative h-[600px] flex items-center justify-center text-white overflow-hidden min-h-[800px]">
             {/* Background Image using Next.js Image component */}
             <Image
                 src={imageUrl}
@@ -61,7 +61,7 @@ const Hero = () => {
                     {currentSlideContent.subText}
                 </p>
                 <div className="flex flex-col items-center">
-                    <button className="border-2 border-white bg-black/50 text-white py-3 px-8 text-lg uppercase font-semibold hover:bg-white hover:text-black transition-colors duration-300">
+                    <button className="border-2 border-zinc-300 bg-black/70 text-white py-3 px-8 text-lg uppercase font-semibold hover:bg-white hover:text-black transition-colors duration-300">
                         {currentSlideContent.ctaText}
                     </button>
 

@@ -11,7 +11,7 @@ const Header: React.FC = () => {
     }
 
     return (
-        <header className="bg-black/85 text-white p-4 shadow-md fixed w-full z-50">
+        <header className="bg-black/90 text-white p-4 shadow-md fixed w-full z-50">
             <nav className="container mx-auto flex items-center justify-between flex-wrap">
                 {/* Desktop View */}
                 <div className="hidden md:flex items-center flex-grow">
