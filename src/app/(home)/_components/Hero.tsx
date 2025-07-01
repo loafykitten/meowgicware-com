@@ -45,9 +45,10 @@ const Hero = () => {
                 >
                     {/* Background Image using Next.js Image component */}
                     <Image
-                        src={`https://picsum.photos/seed/${
-                            index * 10
-                        }/1920/1080`}
+                        src={
+                            slide.ctaImage ||
+                            `https://picsum.photos/seed/${index * 10}/1920/1080`
+                        }
                         alt={`Hero background for slide ${index + 1}`}
                         fill
                         priority={index === 0} // Only prioritize the first image
@@ -58,10 +59,10 @@ const Hero = () => {
                     <div className="absolute inset-0 bg-black opacity-65"></div>
 
                     <div className="relative z-10 text-center px-4 flex flex-col items-center justify-center h-full">
-                        <h1 className="text-5xl md:text-7xl font-bold mb-4 uppercase leading-tight">
+                        <h1 className="text-5xl md:text-7xl font-bold mb-4 uppercase leading-tight text-shadow-md">
                             {slide.mainText}
                         </h1>
-                        <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+                        <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-shadow-sm">
                             {slide.subText}
                         </p>
                         <button

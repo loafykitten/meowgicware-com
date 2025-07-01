@@ -5,7 +5,8 @@ export const HeroSlides = [
         mainText: 'FIND YOUR HOME',
         subText:
             'THROUGH EMOTIONALLY CRAFTED MUSIC, EMBARKING ON ADVENTURES TOGETHER, OR MAGICAL LORE',
-            },
+                ctaImage: '/banner.png',
+    },
     {
         mainText: 'MEANINGFUL STORIES',
         subText:
