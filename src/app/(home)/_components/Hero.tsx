@@ -66,7 +66,9 @@ const Hero = () => {
                 >
                     {/* Background Image using Next.js Image component */}
                     <Image
-                        src={`https://picsum.photos/seed/${index}/1920/1080`}
+                        src={`https://picsum.photos/seed/${
+                            index * 10
+                        }/1920/1080`}
                         alt={`Hero background for slide ${index + 1}`}
                         fill
                         priority={index === 0} // Only prioritize the first image
@@ -95,7 +97,7 @@ const Hero = () => {
                 {slides.map((_, index) => (
                     <button
                         key={index}
-                        className={`w-3 h-3 rounded-full border border-white ${
+                        className={`w-6 h-6 rounded-full border border-white ${
                             currentSlide === index
                                 ? 'bg-white'
                                 : 'bg-transparent'
