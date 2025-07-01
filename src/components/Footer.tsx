@@ -4,7 +4,7 @@ import React from 'react'
 const Footer: React.FC = () => {
     return (
         <footer className="bg-zinc-900 text-gray-400 py-12 px-6 sm:px-6 lg:px-8 mt-auto flex-grow flex flex-col justify-start">
-            <div className="flex flex-col-reverse md:flex-row justify-between items-start md:items-center">
+            <div className="flex flex-col-reverse md:flex-row justify-between items-start md:items-baseline">
                 {/* Left Section: Company Logo and Legal Links */}
                 <div className="flex flex-col items-start space-y-4">
                     {/* Placeholder for EA BioWare Logo */}
