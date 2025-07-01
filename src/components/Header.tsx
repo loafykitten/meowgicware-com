@@ -11,13 +11,13 @@ const Header: React.FC = () => {
     }
 
     return (
-        <header className="bg-black/90 text-white p-4 shadow-md fixed w-full z-50">
+        <header className="bg-black/90 text-white px-4 py-6 shadow-md fixed w-full z-50">
             <nav className="container mx-auto flex items-center justify-between flex-wrap">
                 {/* Desktop View */}
                 <div className="hidden md:flex items-center flex-grow">
                     <Link
                         href="/"
-                        className="text-2xl font-bold text-white mr-auto"
+                        className="text-3xl font-bold text-white mr-auto"
                     >
                         MeowgicWare
                     </Link>
