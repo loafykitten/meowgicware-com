@@ -26,7 +26,7 @@ export default function RootLayout({
                 className={`${inter.variable} antialiased flex flex-col min-h-screen`}
             >
                 <Header />
-                <main className="flex-grow">{children}</main>
+                <main>{children}</main>
                 <Footer />
             </body>
         </html>

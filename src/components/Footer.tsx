@@ -3,8 +3,8 @@ import React from 'react'
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-zinc-900 text-gray-400 py-8 px-4 sm:px-6 lg:px-8 mt-auto">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center space-y-8 md:space-y-0">
+        <footer className="bg-zinc-900 text-gray-400 py-12 px-6 sm:px-6 lg:px-8 mt-auto flex-grow flex flex-col justify-start">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-8 md:space-y-0">
                 {/* Left Section: Company Logo and Legal Links */}
                 <div className="flex flex-col items-start space-y-4">
                     {/* Placeholder for EA BioWare Logo */}
