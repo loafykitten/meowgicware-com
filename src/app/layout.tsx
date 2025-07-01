@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import '@/styles/global.css'
 import type { Metadata } from 'next'
@@ -21,9 +22,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${inter.variable} antialiased`}>
+            <body
+                className={`${inter.variable} antialiased flex flex-col min-h-screen`}
+            >
                 <Header />
-                {children}
+                <main className="flex-grow">{children}</main>
+                <Footer />
             </body>
         </html>
     )
