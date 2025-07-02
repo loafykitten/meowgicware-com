@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "npm: dev - ClairWeb",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": {
+        "cwd": "${workspaceFolder}/ClairWeb"
+      },
+      "isBackground": true,
+      "problemMatcher": [
+        {
+          "pattern": [
+            {
+              "regexp": ".*",
+              "file": 0,
+              "location": 1,
+              "message": 2
+            }
+          ],
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "Starting development server",
+            "endsPattern": "Ready in"
+          }
+        }
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "runOptions": {
+        "runOn": "default"
+      }
+    }
+  ]
+}

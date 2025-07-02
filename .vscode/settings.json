@@ -1,0 +1,10 @@
+{
+    "editor.fontFamily": "'JetBrainsMono Nerd Font'",
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+    "terminal.integrated.profiles.linux": {
+        "zsh": {
+            "path": "zsh",
+            "args": ["-i"]
+        },
+    }
+}
