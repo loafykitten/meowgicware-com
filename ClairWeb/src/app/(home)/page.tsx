@@ -1,11 +1,11 @@
-import GameLogos from './_components/ProjectLogos'
+import ProjectLogos from './_components/ProjectLogos'
 import Hero from './_components/Hero'
 
-export default function Home() {
+export default function HomePage() {
     return (
         <>
             <Hero />
-            <GameLogos />
+            <ProjectLogos />
         </>
     )
 }
