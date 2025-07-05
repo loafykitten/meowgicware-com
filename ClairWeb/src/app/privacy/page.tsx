@@ -24,7 +24,7 @@ const PrivacyPage: React.FC = () => {
             </p>
             <h3 className="text-xl font-bold mt-6 mb-2">Definitions</h3>
             <p className="mb-4">For the purposes of this Privacy Policy:</p>
-            <ul className="list-disc list-inside mb-4 pl-4">
+            <ul className="list-disc list-outside mb-4 pl-4">
                 <li>
                     <p className="mb-2">
                         <strong>Account</strong> means a unique account created
@@ -134,7 +134,7 @@ const PrivacyPage: React.FC = () => {
                 contact or identify You. Personally identifiable information may
                 include, but is not limited to:
             </p>
-            <ul className="list-disc list-inside mb-4 pl-4">
+            <ul className="list-disc list-outside mb-4 pl-4">
                 <li>
                     <p className="mb-2">Email address</p>
                 </li>
@@ -178,7 +178,7 @@ const PrivacyPage: React.FC = () => {
                 track information and to improve and analyze Our Service. The
                 technologies We use may include:
             </p>
-            <ul className="list-disc list-inside mb-4 pl-4">
+            <ul className="list-disc list-outside mb-4 pl-4">
                 <li>
                     <strong>Cookies or Browser Cookies.</strong> A cookie is a
                     small file placed on Your Device. You can instruct Your
@@ -218,7 +218,7 @@ const PrivacyPage: React.FC = () => {
                 We use both Session and Persistent Cookies for the purposes set
                 out below:
             </p>
-            <ul className="list-disc list-inside mb-4 pl-4">
+            <ul className="list-disc list-outside mb-4 pl-4">
                 <li>
                     <p className="mb-2">
                         <strong>Necessary / Essential Cookies</strong>
@@ -271,7 +271,7 @@ const PrivacyPage: React.FC = () => {
             </p>
             <h3 className="text-xl font-bold mt-6 mb-2">Use of Your Personal Data</h3>
             <p className="mb-4">The Company may use Personal Data for the following purposes:</p>
-            <ul className="list-disc list-inside mb-4 pl-4">
+            <ul className="list-disc list-outside mb-4 pl-4">
                 <li>
                     <p className="mb-2">
                         <strong>To provide and maintain our Service</strong>,
@@ -350,7 +350,7 @@ const PrivacyPage: React.FC = () => {
                 We may share Your personal information in the following
                 situations:
             </p>
-            <ul className="list-disc list-inside mb-4 pl-4">
+            <ul className="list-disc list-outside mb-4 pl-4">
                 <li>
                     <strong>With Service Providers:</strong> We may share Your
                     personal information with Service Providers to monitor and
@@ -469,7 +469,7 @@ const PrivacyPage: React.FC = () => {
                 The Company may disclose Your Personal Data in the good faith
                 belief that such action is necessary to:
             </p>
-            <ul className="list-disc list-inside mb-4 pl-4">
+            <ul className="list-disc list-outside mb-4 pl-4">
                 <li className="mb-2">Comply with a legal obligation</li>
                 <li className="mb-2">
                     Protect and defend the rights or property of the Company
@@ -542,7 +542,7 @@ const PrivacyPage: React.FC = () => {
                 If you have any questions about this Privacy Policy, You can
                 contact us:
             </p>
-            <ul className="list-disc list-inside mb-4 pl-4">
+            <ul className="list-disc list-outside mb-4 pl-4">
                 <li className="mb-2">By email: hello@meowgicware.com</li>
             </ul>
         </div>
