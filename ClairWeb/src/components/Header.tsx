@@ -88,9 +88,24 @@ const Header: React.FC = () => {
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-slate-800 mt-2 py-2 px-4 rounded-md">
                     {NavLinks.map((link, index) =>
-                        link.local ?
-                            (<Link key={index} href={link.href} className="block py-2 hover:bg-slate-700">{link.text}</Link>) :
-                            (<a key={index} href={link.href} className="block py-2 hover:bg-slate-700">{link.text}</a>)
+                        link.local ? (
+                            <Link
+                                key={index}
+                                href={link.href}
+                                className="block py-2 hover:bg-slate-700"
+                            >
+                                {link.text}
+                            </Link>
+                        ) : (
+                            <a
+                                key={index}
+                                href={link.href}
+                                className="block py-2 hover:bg-slate-700"
+                                target="_blank"
+                            >
+                                {link.text}
+                            </a>
+                        )
                     )}
                 </div>
             )}

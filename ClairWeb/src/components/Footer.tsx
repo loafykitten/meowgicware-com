@@ -22,10 +22,10 @@ const Footer: React.FC = () => {
                         <Link href="#" className="hover:underline">
                             Legal & Privacy
                         </Link>
-                        <Link href="#" className="hover:underline">
+                        <Link href="/terms" className="hover:underline">
                             User Agreement
                         </Link>
-                        <Link href="#" className="hover:underline">
+                        <Link href="/privacy" className="hover:underline">
                             Privacy & Cookie Policy
                         </Link>
                     </div>
@@ -69,19 +69,19 @@ const Footer: React.FC = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="hover:underline">
+                                <a href="//threads.com/@meowgicware" target="_blank" className="hover:underline">
                                     Threads
-                                </Link>
+                                </a>
                             </li>
                             <li>
-                                <Link href="#" className="hover:underline">
+                                <a href="//bsky.app/profile/loafykitten.cafe" target="_blank" className="hover:underline">
                                     Bluesky
-                                </Link>
+                                </a>
                             </li>
                             <li>
-                                <Link href="#" className="hover:underline">
+                                <a href="//youtube.com/@loafykitten" target="_blank" className="hover:underline">
                                     YouTube
-                                </Link>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -91,9 +91,9 @@ const Footer: React.FC = () => {
                         <h3 className="text-white font-bold mb-4">STORE</h3>
                         <ul className="space-y-2 text-sm">
                             <li>
-                                <Link href="#" className="hover:underline">
+                                <a href="//loafykitten.cafe" target="_blank" className="hover:underline">
                                     About
-                                </Link>
+                                </a>
                             </li>
                             <li>
                                 <Link href="#" className="hover:underline">
