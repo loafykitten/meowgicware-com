@@ -1,5 +1,6 @@
 'use client'
 
+import { NavLinks } from '@/constants/nav-links'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -12,13 +13,13 @@ const Header: React.FC = () => {
     }
 
     return (
-        <header className="bg-slate-800/90 text-white px-6 md:px-48 py-6 shadow-md fixed w-full z-50">
+        <header className="bg-zinc-950 md:bg-zinc-950/90 text-white px-6 md:px-48 py-6 shadow-md fixed w-full z-50">
             <nav className="flex items-center justify-between flex-wrap">
                 {/* Desktop View */}
                 <div className="hidden md:flex items-center flex-grow">
                     <Link href="/" className="mr-auto">
                         <Image
-                            src="/logo-text.png"
+                            src="/logo-text-white.png"
                             alt="MeowgicWare Logo"
                             height={40}
                             width={150}
@@ -26,18 +27,25 @@ const Header: React.FC = () => {
                         />
                     </Link>
                     <div className="flex space-x-4">
-                        <Link href="/games" className="hover:text-gray-300">
-                            Games
-                        </Link>
-                        <Link href="/about" className="hover:text-gray-300">
-                            About
-                        </Link>
-                        <Link href="/merch" className="hover:text-gray-300">
-                            Merch
-                        </Link>
-                        <Link href="/blog" className="hover:text-gray-300">
-                            Blog
-                        </Link>
+                        {NavLinks.map((link, index) =>
+                            link.local ? (
+                                <Link
+                                    key={index}
+                                    href={link.href}
+                                    className="hover:text-gray-300"
+                                >
+                                    {link.text}
+                                </Link>
+                            ) : (
+                                <a
+                                    key={index}
+                                    href={link.href}
+                                    className="hover:text-gray-300"
+                                >
+                                    {link.text}
+                                </a>
+                            )
+                        )}
                     </div>
                 </div>
 
@@ -64,7 +72,7 @@ const Header: React.FC = () => {
                     </button>
                     <Link href="/" className="mx-auto">
                         <Image
-                            src="/logo-text.png"
+                            src="/logo-text-white.png"
                             alt="MeowgicWare Logo"
                             height={40}
                             width={150}
@@ -79,30 +87,11 @@ const Header: React.FC = () => {
             {/* Mobile Menu Dropdown */}
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-slate-800 mt-2 py-2 px-4 rounded-md">
-                    <Link
-                        href="/games"
-                        className="block py-2 hover:bg-slate-700"
-                    >
-                        Games
-                    </Link>
-                    <Link
-                        href="/about"
-                        className="block py-2 hover:bg-slate-700"
-                    >
-                        About
-                    </Link>
-                    <Link
-                        href="/merch"
-                        className="block py-2 hover:bg-slate-700"
-                    >
-                        Merch
-                    </Link>
-                    <Link
-                        href="/blog"
-                        className="block py-2 hover:bg-slate-700"
-                    >
-                        Blog
-                    </Link>
+                    {NavLinks.map((link, index) =>
+                        link.local ?
+                            (<Link key={index} href={link.href} className="block py-2 hover:bg-slate-700">{link.text}</Link>) :
+                            (<a key={index} href={link.href} className="block py-2 hover:bg-slate-700">{link.text}</a>)
+                    )}
                 </div>
             )}
         </header>

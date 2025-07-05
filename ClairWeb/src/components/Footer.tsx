@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
                 <div className="flex flex-col items-start space-y-4">
                     {/* MeowgicWare Logo */}
                     <Image
-                        src="/logo-text.png"
+                        src="/logo-text-white.png"
                         alt="MeowgicWare Logo"
                         height={40}
                         width={150}
