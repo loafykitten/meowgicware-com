@@ -19,7 +19,7 @@ const Header: React.FC = () => {
                 <div className="hidden md:flex items-center flex-grow">
                     <Link href="/" className="mr-auto">
                         <Image
-                            src="/logo-text-white.png"
+                            src="/images/logo-text-white.png"
                             alt="MeowgicWare Logo"
                             height={40}
                             width={150}
@@ -72,7 +72,7 @@ const Header: React.FC = () => {
                     </button>
                     <Link href="/" className="mx-auto">
                         <Image
-                            src="/logo-text-white.png"
+                            src="/images/logo-text-white.png"
                             alt="MeowgicWare Logo"
                             height={40}
                             width={150}

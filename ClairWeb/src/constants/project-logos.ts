@@ -7,7 +7,7 @@ interface ProjectLogo {
 export const ProjectLogos: ProjectLogo[] = [
     {
         href: '//loafykitten.cafe',
-        src: '/loafykitten-logo.png',
+        src: '/images/loafykitten-logo.png',
         alt: 'Project loafykitten'
     }
 ]
