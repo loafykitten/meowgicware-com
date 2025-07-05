@@ -19,9 +19,6 @@ const Footer: React.FC = () => {
 
                     {/* Legal Links */}
                     <div className="flex flex-wrap text-sm space-x-4">
-                        <Link href="#" className="hover:underline">
-                            Legal & Privacy
-                        </Link>
                         <Link href="/terms" className="hover:underline">
                             User Agreement
                         </Link>
