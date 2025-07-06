@@ -1,3 +1,17 @@
+# Build stage
+FROM node:18-alpine AS builder
+
+WORKDIR /app
+
+# Install dependencies deterministically
+COPY ClaireWeb/package.json ClaireWeb/package-lock.json ./
+RUN npm ci
+
+# Build application
+COPY ClaireWeb/. .
+RUN mkdir -p /app/public
+RUN npm run build
+
 # Production runtime stage
 FROM node:18-alpine AS runner
 
