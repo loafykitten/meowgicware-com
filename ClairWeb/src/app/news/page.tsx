@@ -1,6 +1,11 @@
 import { NewsEntries } from '@/constants/news-entries';
 import TexturedHeader from '@/components/textured-header';
 
+export const metadata = {
+  title: 'MeowgicWare - News',
+  description: 'Explore the latest MeowgicWare news and updates.',
+};
+
 export default function NewsPage() {
   return (
     <div className="flex flex-col text-white">

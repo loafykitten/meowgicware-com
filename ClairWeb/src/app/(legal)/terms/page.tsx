@@ -1,5 +1,13 @@
 import React from 'react';
 
+export const metadata = {
+  title: 'MeowgicWare - User Agreement',
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
+
 const TermsPage: React.FC = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-black">
