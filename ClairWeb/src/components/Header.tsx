@@ -1,6 +1,7 @@
 'use client'
 
 import { NavLinks } from '@/constants/nav-links'
+import Dropdown from './Dropdown'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -28,10 +29,12 @@ const Header: React.FC = () => {
                     </Link>
                     <div className="flex space-x-4">
                         {NavLinks.map((link, index) =>
-                            link.local ? (
+                            link.dropdown ? (
+                                <Dropdown key={index} link={link} />
+                            ) : link.local ? (
                                 <Link
                                     key={index}
-                                    href={link.href}
+                                    href={link.href || '#'}
                                     className="hover:text-gray-300"
                                 >
                                     {link.text}
@@ -39,8 +42,10 @@ const Header: React.FC = () => {
                             ) : (
                                 <a
                                     key={index}
-                                    href={link.href}
+                                    href={link.href || '#'}
                                     className="hover:text-gray-300"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     {link.text}
                                 </a>
@@ -87,26 +92,52 @@ const Header: React.FC = () => {
             {/* Mobile Menu Dropdown */}
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-slate-800 mt-2 py-2 px-4 rounded-md">
-                    {NavLinks.map((link, index) =>
-                        link.local ? (
-                            <Link
-                                key={index}
-                                href={link.href}
-                                className="block py-2 hover:bg-slate-700"
-                            >
-                                {link.text}
-                            </Link>
-                        ) : (
-                            <a
-                                key={index}
-                                href={link.href}
-                                className="block py-2 hover:bg-slate-700"
-                                target="_blank"
-                            >
-                                {link.text}
-                            </a>
-                        )
-                    )}
+                    {NavLinks.map((link, index) => (
+                        <div key={index}>
+                            {link.local ? (
+                                <Link
+                                    href={link.href || '#'}
+                                    className="block py-2 hover:bg-slate-700"
+                                >
+                                    {link.text}
+                                </Link>
+                            ) : (
+                                <a
+                                    href={link.href || '#'}
+                                    className="block py-2 hover:bg-slate-700"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {link.text}
+                                </a>
+                            )}
+                            {link.dropdown && (
+                                <div className="pl-4">
+                                    {link.dropdown.map((subLink, subIndex) =>
+                                        subLink.local ? (
+                                            <Link
+                                                key={subIndex}
+                                                href={subLink.href || '#'}
+                                                className="block py-2 text-sm text-gray-300 hover:bg-slate-700"
+                                            >
+                                                {subLink.text}
+                                            </Link>
+                                        ) : (
+                                            <a
+                                                key={subIndex}
+                                                href={subLink.href || '#'}
+                                                className="block py-2 text-sm text-gray-300 hover:bg-slate-700"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                {subLink.text}
+                                            </a>
+                                        )
+                                    )}
+                                </div>
+                            )}
+                        </div>
+                    ))}
                 </div>
             )}
         </header>

@@ -1,19 +1,41 @@
 interface NavLink {
     text: string
-    href: string
+    href?: string
+    dropdown?: NavLink[]
     local: boolean
 }
 
 export const NavLinks: NavLink[] = [
     {
-        text: 'Merch',
-        href: '#',
+        text: 'About',
+        href: '/about',
         local: true
     },
     {
-        text: 'Blog',
-        href: '#',
+        text: 'About',
+        href: '/about',
         local: true
+    },
+    {
+        text: 'News',
+        href: '/news',
+        local: true
+    },
+    {
+        text: 'Support Us',
+        local: true,
+        dropdown: [
+            {
+                text: 'Help Fund Us!',
+                href: '//kofi.com/meowgicware',
+                local: false
+            },
+            {
+                text: 'Become a Patron!',
+                href: '//patreon.com/meowgicware',
+                local: false
+            },
+        ]
     },
     {
         text: '【 PROJECT: loafykitten 】',
