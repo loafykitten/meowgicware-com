@@ -3,8 +3,6 @@ import Header from '@/components/Header'
 import '@/styles/global.css'
 import type { Metadata } from 'next'
 import { DM_Sans, Roboto, Zain } from 'next/font/google'
-import "vanilla-cookieconsent/dist/cookieconsent.css";
-import * as CookieConsent from "vanilla-cookieconsent";
 
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'

@@ -44,7 +44,7 @@ const PrivacyPage: React.FC = () => {
                         <p className="mb-2">
                             <strong>Affiliate</strong> means an entity that
                             controls, is controlled by or is under common control
-                            with a party, where "control" means ownership
+                            with a party, where &quot;control&quot; means ownership
                             of 50% or more of the shares, equity interest or other
                             securities entitled to vote for election of directors or
                             other managing authority.
@@ -53,8 +53,8 @@ const PrivacyPage: React.FC = () => {
                     <li>
                         <p className="mb-2">
                             <strong>Company</strong> (referred to as either
-                            "the Company", "We", "Us"
-                            or "Our" in this Agreement) refers to
+                            &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot;
+                            or &quot;Our&quot; in this Agreement) refers to
                             MeowgicWare LLC, 1209 MOUNTAIN ROAD PL NE STE N,
                             ALBUQUERQUE, NM 87110 .
                         </p>
@@ -160,7 +160,7 @@ const PrivacyPage: React.FC = () => {
                 <h4 className="text-lg font-bold mt-4 mb-2">Usage Data</h4>
                 <p className="mb-4">Usage Data is collected automatically when using the Service.</p>
                 <p className="mb-4">
-                    Usage Data may include information such as Your Device's
+                    Usage Data may include information such as Your Device&apos;s
                     Internet Protocol address (e.g. IP address), browser type,
                     browser version, the pages of our Service that You visit, the
                     time and date of Your visit, the time spent on those pages,
@@ -209,7 +209,7 @@ const PrivacyPage: React.FC = () => {
                     </li>
                 </ul>
                 <p className="mb-4">
-                    Cookies can be "Persistent" or "Session"
+                    Cookies can be &quot;Persistent&quot; or &quot;Session&quot;
                     Cookies. Persistent Cookies remain on Your personal computer or
                     mobile device when You go offline, while Session Cookies are
                     deleted as soon as You close Your web browser. Learn more about
@@ -310,7 +310,7 @@ const PrivacyPage: React.FC = () => {
                             <strong>To contact You:</strong> To contact You by
                             email, telephone calls, SMS, or other equivalent forms
                             of electronic communication, such as a mobile
-                            application's push notifications regarding updates or
+                            application&quot;s push notifications regarding updates or
                             informative communications related to the
                             functionalities, products or contracted services,
                             including the security updates, when necessary or
@@ -417,7 +417,7 @@ const PrivacyPage: React.FC = () => {
                 <h3 className="text-xl font-bold mt-6 mb-2">Transfer of Your Personal Data</h3>
                 <p className="mb-4">
                     Your information, including Personal Data, is processed at the
-                    Company's operating offices and in any other places where the
+                    Company&quot;s operating offices and in any other places where the
                     parties involved in the processing are located. It means that
                     this information may be transferred to — and maintained on —
                     computers located outside of Your state, province, country or
@@ -501,7 +501,7 @@ const PrivacyPage: React.FC = () => {
                     use commercially acceptable means to protect Your Personal Data,
                     We cannot guarantee its absolute security.
                 </p>
-                <h2 className="text-2xl font-bold mt-8 mb-4">Children's Privacy</h2>
+                <h2 className="text-2xl font-bold mt-8 mb-4">Children&quot;s Privacy</h2>
                 <p className="mb-4">
                     Our Service does not address anyone under the age of 13. We do
                     not knowingly collect personally identifiable information from
@@ -515,14 +515,14 @@ const PrivacyPage: React.FC = () => {
                 <p className="mb-4">
                     If We need to rely on consent as a legal basis for processing
                     Your information and Your country requires consent from a
-                    parent, We may require Your parent's consent before We collect
+                    parent, We may require Your parent&quot;s consent before We collect
                     and use that information.
                 </p>
                 <h2 className="text-2xl font-bold mt-8 mb-4">Links to Other Websites</h2>
                 <p className="mb-4">
                     Our Service may contain links to other websites that are not
                     operated by Us. If You click on a third party link, You will be
-                    directed to that third party's site. We strongly advise You to
+                    directed to that third party&quot;s site. We strongly advise You to
                     review the Privacy Policy of every site You visit.
                 </p>
                 <p className="mb-4">
@@ -539,7 +539,7 @@ const PrivacyPage: React.FC = () => {
                 <p className="mb-4">
                     We will let You know via email and/or a prominent notice on Our
                     Service, prior to the change becoming effective and update the
-                    "Last updated" date at the top of this Privacy Policy.
+                    &quot;Last updated&quot; date at the top of this Privacy Policy.
                 </p>
                 <p className="mb-4">
                     You are advised to review this Privacy Policy periodically for

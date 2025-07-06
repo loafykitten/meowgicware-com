@@ -11,7 +11,7 @@ export default function AboutMeowgicWare() {
         one project at a time.
       </p>
       <p className="text-lg text-gray-300 max-w-3xl mt-12 mx-auto">
-        <small>Ember's Note:</small>
+        <small>Ember&apos;s Note:</small>
         <br />
         The name MeowgicWare is heavily inspired from my favorite childhood game developer BioWare! 
         My introduction to the desire to make games, came from Star Wars - Knights of the Old Republic. 
@@ -20,7 +20,7 @@ export default function AboutMeowgicWare() {
         and while I may only be one person, I love to dream that I hold some of that DNA in what I do too. 
       </p>
       <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-        Thank you so much for being apart of the journey, and I'm grateful for everyone who's partaking on it with us! 
+        Thank you so much for being apart of the journey, and I&apos;m grateful for everyone who&apos;s partaking on it with us! 
         Any one of us can put a little meowgic into the world, even you.
       </p>
     </div>
