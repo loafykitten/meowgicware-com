@@ -1,0 +1,12 @@
+services:
+  obscur-web:
+    build:
+      context: .
+      dockerfile: ClairWeb/Dockerfile
+    image: clair-web:latest
+    container_name: clair-web
+
+networks:
+  default:
+    external: true
+    name: npm-net
