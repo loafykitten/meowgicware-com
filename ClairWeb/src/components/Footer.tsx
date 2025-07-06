@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
                     {/* Copyright and Privacy Choices */}
                     <div className="text-xs mt-2">
                         <p>©2025 MeowgicWare LLC.</p>
-                        <p className="flex items-center mt-1">
+                        <button type="button" className="flex items-center mt-1 hover:underline" data-cc="show-preferencesModal">
                             <span className="mr-1">
                                 <svg
                                     width="16"
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
                                 </svg>
                             </span>
                             Your Privacy Choices
-                        </p>
+                        </button>
                     </div>
                 </div>
 

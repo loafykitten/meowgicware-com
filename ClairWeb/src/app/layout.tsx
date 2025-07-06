@@ -3,11 +3,14 @@ import Header from '@/components/Header'
 import '@/styles/global.css'
 import type { Metadata } from 'next'
 import { DM_Sans, Roboto, Zain } from 'next/font/google'
+import "vanilla-cookieconsent/dist/cookieconsent.css";
+import * as CookieConsent from "vanilla-cookieconsent";
 
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import ConsentManagement from '@/features/consent/components/consent-management'
 config.autoAddCss = false
 library.add(fab)
 library.add(fas)
@@ -49,6 +52,7 @@ export default function RootLayout({
                 <Header />
                 <main>{children}</main>
                 <Footer />
+                <ConsentManagement />
             </body>
         </html>
     )
