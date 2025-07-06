@@ -1,5 +1,5 @@
 services:
-  obscur-web:
+  clair-web:
     build:
       context: .
       dockerfile: ClairWeb/Dockerfile
