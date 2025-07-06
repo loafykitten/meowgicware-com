@@ -9,11 +9,14 @@ const zain = Zain({
     display: 'swap'
 })
 
-interface TexturedHeaderProps {}
+interface TexturedHeaderProps {
+    title: string;
+}
 
-const TexturedHeader: React.FC<TexturedHeaderProps> = () => {
+const TexturedHeader: React.FC<TexturedHeaderProps> = ({ title }) => {
   return (
     <div className={[zain.className, "relative w-full h-64 flex items-center justify-center pt-20", styles.background].join(' ')}>
+        <h1 className="text-6xl font-bold text-white text-center">{title}</h1>
     </div>
   );
 };

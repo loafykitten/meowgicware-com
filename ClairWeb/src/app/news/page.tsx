@@ -5,7 +5,7 @@ export default function NewsPage() {
   return (
     <div className="flex flex-col text-white">
       <main className="flex-grow">
-        <TexturedHeader />
+        <TexturedHeader title="The MeowgicWare Times" />
         <div className="bg-gray-900">
           {NewsEntries.map((entry, index) => (
             <div
