@@ -1,11 +1,11 @@
 import { NewsEntries } from '@/constants/news-entries';
-import TexturedHeader from '@/components/TexturedHeader';
+import TexturedHeader from '@/components/textured-header';
 
 export default function NewsPage() {
   return (
     <div className="flex flex-col text-white">
       <main className="flex-grow">
-        <TexturedHeader title="Latest News" />
+        <TexturedHeader />
         <div className="bg-gray-900">
           {NewsEntries.map((entry, index) => (
             <div

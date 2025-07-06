@@ -1,0 +1,32 @@
+.background {
+    background-color: #000000;
+    opacity: 0.9;
+    background: radial-gradient(
+            circle,
+            transparent 20%,
+            #000000 20%,
+            #000000 80%,
+            transparent 80%,
+            transparent
+        ),
+        radial-gradient(
+                circle,
+                transparent 20%,
+                #000000 20%,
+                #000000 80%,
+                transparent 80%,
+                transparent
+            )
+            17.5px 17.5px,
+        linear-gradient(
+                #1f2028 1.4000000000000001px,
+                transparent 1.4000000000000001px
+            )
+            0 -0.7000000000000001px,
+        linear-gradient(
+                90deg,
+                #1f2028 1.4000000000000001px,
+                #000000 1.4000000000000001px
+            ) -0.7000000000000001px 0;
+    background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
+}
