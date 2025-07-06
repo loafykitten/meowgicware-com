@@ -4,11 +4,11 @@ FROM node:18-alpine AS builder
 WORKDIR /app
 
 # Install dependencies deterministically
-COPY ClaireWeb/package.json ClaireWeb/package-lock.json ./
+COPY ClairWeb/package.json ClairWeb/package-lock.json ./
 RUN npm ci
 
 # Build application
-COPY ClaireWeb/. .
+COPY ClairWeb/. .
 RUN mkdir -p /app/public
 RUN npm run build
 
