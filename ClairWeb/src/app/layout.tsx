@@ -32,7 +32,7 @@ const zain = Zain({
 
 
 export const metadata: Metadata = {
-    title: 'MeowgicWare - Dreamy Lofi | Enchating Games | Meaningful Stories',
+    title: 'MeowgicWare - Enchanting Games | Meaningful Stories | Creative Technology',
     description:
         'MeowgicWare, founded by Ember (@loafykitten), blends software engineering with imaginative game design and heartfelt interactive experiences. Explore immersive digital projects and meaningful stories.',
 }
