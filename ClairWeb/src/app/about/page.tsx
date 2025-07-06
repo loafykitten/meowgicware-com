@@ -8,13 +8,18 @@ export default function AboutPage() {
       imageSrc: "/images/ember.jpg", // Placeholder image
       name: "Ember",
       title: "Founder / Creative & Engineering Director",
-      description: "Hii! ㅤꨄ I'm the big cheese behind MeowgicWare! I've been working with computers since I was child, and gaming has been a lifelong passion. I want to build inclusive interactive experiences, than can bring a little peace to every single of us, one project at a time."
+      description: `
+        <p>Hii! ㅤꨄ</p>
+        <p class="mt-4">I'm the big cheese behind MeowgicWare and the human behind loafykitten! I've been working with computers since I was child, and gaming has been a lifelong passion. I want to build inclusive interactive experiences, than can bring a little peace to every single of us, one project at a time.</p>
+      `
     },
     {
       imageSrc: "/images/dutchie.png", // Placeholder image
       name: "Dutchie",
       title: "Chief of Purr-formance",
-      description: "Whiskers is the coding wizard, translating Meowster's grand visions into elegant and robust software solutions, often fueled by catnip and late-night coding sessions."
+      description: `
+        <p><i>mrrow!</i></p>
+        <p class="mt-4">Her task is to oversee operations, ensuring optimal performance through strategic head scritches and timely kibble disbursements.</p>`
     }
   ];
 
