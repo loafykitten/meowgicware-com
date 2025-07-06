@@ -19,12 +19,12 @@ export default function TeamMember({ imageSrc, name, title, description, align }
           alt={name}
           width={160}
           height={160}
-          className="rounded-full object-cover w-40 h-40 border-4 border-purple-500"
+          className="rounded-full object-cover w-40 h-40 border-2 border-slate-400"
         />
       </div>
-      <div className="text-center md:text-left flex-grow">
+      <div className={`text-center flex-grow ${isLeftAligned ? 'md:text-left' : 'md:text-right'}`}>
         <h2 className="text-3xl font-bold text-white mb-2">{name}</h2>
-        <h3 className="text-xl text-purple-300 mb-4">{title}</h3>
+        <h3 className="text-xl text-blue-300 mb-4">{title}</h3>
         <p className="text-gray-300 leading-relaxed">{description}</p>
       </div>
     </div>

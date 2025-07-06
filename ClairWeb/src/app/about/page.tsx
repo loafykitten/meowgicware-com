@@ -1,18 +1,19 @@
 import TexturedHeader from '@/components/textured-header';
 import TeamMember from '@/features/about/components/TeamMember';
+import AboutMeowgicWare from '@/features/about/components/AboutMeowgicWare';
 
 export default function AboutPage() {
   const teamMembers = [
     {
-      imageSrc: "/images/hero-1.png", // Placeholder image
-      name: "Meowster",
-      title: "Chief Cat Officer",
-      description: "Meowster is the visionary behind MeowgicWare, ensuring all projects are purr-fectly executed with a touch of feline charm and strategic naps."
+      imageSrc: "/images/ember.jpg", // Placeholder image
+      name: "Ember",
+      title: "Founder / Creative & Engineering Director",
+      description: "Hii! ㅤꨄ I'm the big cheese behind MeowgicWare! I've been working with computers since I was child, and gaming has been a lifelong passion. I want to build inclusive interactive experiences, than can bring a little peace to every single of us, one project at a time."
     },
     {
-      imageSrc: "/images/hero-2.png", // Placeholder image
-      name: "Whiskers",
-      title: "Lead Developer",
+      imageSrc: "/images/dutchie.png", // Placeholder image
+      name: "Dutchie",
+      title: "Chief of Purr-formance",
       description: "Whiskers is the coding wizard, translating Meowster's grand visions into elegant and robust software solutions, often fueled by catnip and late-night coding sessions."
     }
   ];
@@ -21,6 +22,7 @@ export default function AboutPage() {
     <div>
       <TexturedHeader title="Magic Behind Meowgic" />
       <div className="container mx-auto px-4 py-12">
+        <AboutMeowgicWare />
         {teamMembers.map((member, index) => (
           <TeamMember
             key={index}
