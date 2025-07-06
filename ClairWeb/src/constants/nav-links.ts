@@ -12,13 +12,13 @@ export const NavLinks: NavLink[] = [
         local: true
     },
     {
-        text: 'About',
-        href: '/about',
+        text: 'News',
+        href: '/news',
         local: true
     },
     {
-        text: 'News',
-        href: '/news',
+        text: 'About',
+        href: '/about',
         local: true
     },
     {
@@ -27,7 +27,7 @@ export const NavLinks: NavLink[] = [
         dropdown: [
             {
                 text: 'Help Fund Us!',
-                href: '//kofi.com/meowgicware',
+                href: '//ko-fi.com/meowgicware',
                 local: false
             },
             {
