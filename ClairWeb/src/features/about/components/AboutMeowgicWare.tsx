@@ -19,7 +19,7 @@ export default function AboutMeowgicWare() {
         BioWare has never stopped inspiring with their particular talent in crafting worlds and telling stories, 
         and while I may only be one person, I love to dream that I hold some of that DNA in what I do too. 
       </p>
-      <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+      <p className="text-lg text-gray-300 max-w-3xl mx-auto mt-4">
         Thank you so much for being apart of the journey, and I&apos;m grateful for everyone who&apos;s partaking on it with us! 
         Any one of us can put a little meowgic into the world, even you.
       </p>
