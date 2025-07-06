@@ -61,8 +61,8 @@ const Footer: React.FC = () => {
                         <h3 className="text-white font-bold mb-4">SOCIAL</h3>
                         <ul className="space-y-2 text-sm">
                             <li>
-                                <Link href="#" className="hover:underline">
-                                    Blog
+                                <Link href="/news" className="hover:underline">
+                                    News
                                 </Link>
                             </li>
                             <li>
@@ -89,12 +89,12 @@ const Footer: React.FC = () => {
                         <ul className="space-y-2 text-sm">
                             <li>
                                 <a href="//loafykitten.cafe" target="_blank" className="hover:underline">
-                                    About
+                                    loafykitten.cafe
                                 </a>
                             </li>
                             <li>
-                                <Link href="#" className="hover:underline">
-                                    Merchandise
+                                <Link href="/about" className="hover:underline">
+                                    About
                                 </Link>
                             </li>
                             <li>
