@@ -2,7 +2,7 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import '@/styles/global.css'
 import type { Metadata } from 'next'
-import { DM_Sans } from 'next/font/google'
+import { DM_Sans, Roboto, Zain } from 'next/font/google'
 
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -16,6 +16,19 @@ const dmSans = DM_Sans({
     variable: '--font-dm-sans',
     subsets: ['latin'],
 })
+
+const roboto = Roboto({
+    variable: '--font-roboto',
+    subsets: ['latin'],
+})
+
+const zain = Zain({
+    weight: ['400', '800'],
+    variable: '--font-zain',
+    subsets: ['latin'],
+    display: 'swap'
+})
+
 
 export const metadata: Metadata = {
     title: 'MeowgicWare - Dreamy Lofi | Enchating Games | Meaningful Stories',
@@ -31,7 +44,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${dmSans.variable} antialiased flex flex-col min-h-screen`}
+                className={`${dmSans.variable} ${roboto.variable} ${zain.variable} antialiased flex flex-col min-h-screen`}
             >
                 <Header />
                 <main>{children}</main>
