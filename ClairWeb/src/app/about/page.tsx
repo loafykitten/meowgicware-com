@@ -6,7 +6,7 @@ export default function AboutPage() {
   const teamMembers = [
     {
       imageSrc: "/images/ember.jpg", // Placeholder image
-      name: "Ember",
+      name: "Ember (loafykitten)",
       title: "Founder / Creative & Engineering Director",
       description: `
         <p>Hii! ㅤꨄ</p>
