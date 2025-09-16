@@ -9,17 +9,17 @@ export const NavLinks: NavLink[] = [
     {
         text: 'About',
         href: '/about',
-        local: true
+        local: true,
     },
     {
         text: 'News',
         href: '/news',
-        local: true
+        local: true,
     },
     {
         text: 'About',
         href: '/about',
-        local: true
+        local: true,
     },
     {
         text: 'Support Us',
@@ -27,19 +27,19 @@ export const NavLinks: NavLink[] = [
         dropdown: [
             {
                 text: 'Help Fund Us!',
-                href: '//ko-fi.com/meowgicware',
-                local: false
+                href: '//ko-fi.com/loafykitten',
+                local: false,
             },
             {
                 text: 'Become a Patron!',
-                href: '//patreon.com/meowgicware',
-                local: false
+                href: '//patreon.com/loafykitten',
+                local: false,
             },
-        ]
+        ],
     },
     {
         text: '【 PROJECT: loafykitten 】',
         href: '//loafykitten.cafe',
-        local: false
+        local: false,
     },
 ]
