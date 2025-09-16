@@ -22,11 +22,11 @@ export const NavLinks: NavLink[] = [
         local: true,
     },
     {
-        text: 'Support Us',
+        text: 'Be A Supporter',
         local: true,
         dropdown: [
             {
-                text: 'Help Fund Us!',
+                text: 'Help Fund Me!',
                 href: '//ko-fi.com/loafykitten',
                 local: false,
             },
