@@ -4,11 +4,11 @@ import '@/styles/global.css'
 import type { Metadata } from 'next'
 import { DM_Sans, Roboto, Zain } from 'next/font/google'
 
+import ConsentManagement from '@/features/consent/components/consent-management'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-import ConsentManagement from '@/features/consent/components/consent-management'
 config.autoAddCss = false
 library.add(fab)
 library.add(fas)
@@ -27,14 +27,37 @@ const zain = Zain({
     weight: ['400', '800'],
     variable: '--font-zain',
     subsets: ['latin'],
-    display: 'swap'
+    display: 'swap',
 })
 
-
 export const metadata: Metadata = {
+    metadataBase: new URL('https://meowgicware.com'),
     title: 'MeowgicWare - Enchanting Games | Meaningful Stories | Creative Technology',
     description:
         'MeowgicWare, founded by Ember (@loafykitten), blends software engineering with imaginative game design and heartfelt interactive experiences. Explore immersive digital projects and meaningful stories.',
+    openGraph: {
+        title: 'MeowgicWare - Enchanting Games | Meaningful Stories | Creative Technology',
+        description:
+            'MeowgicWare blends software engineering with imaginative game design and heartfelt interactive experiences. Explore immersive digital projects and meaningful stories.',
+        url: 'https://meowgicware.com',
+        siteName: 'MeowgicWare',
+        images: [
+            {
+                url: '/images/logo-text.png',
+                width: 1200,
+                height: 630,
+                alt: 'MeowgicWare',
+            },
+        ],
+        locale: 'en_US',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'MeowgicWare',
+        description: 'Enchanting Games, Meaningful Stories, Creative Technology.',
+        images: ['/images/logo-text.png'],
+    },
 }
 
 export default function RootLayout({

@@ -1,11 +1,11 @@
 // TODO: Clean up by adding proper typing
 
 interface HeroSlide {
-    mainText: string;
-    subText: string;
-    ctaText: string;
-    ctaUrl: string;
-    ctaImage: string; // The '?' makes it optional, allowing for slides without an image
+    mainText: string
+    subText: string
+    ctaText: string
+    ctaUrl: string
+    ctaImage: string // The '?' makes it optional, allowing for slides without an image
 }
 
 export const HeroSlides: HeroSlide[] = [
@@ -20,7 +20,7 @@ export const HeroSlides: HeroSlide[] = [
         subText:
             'AN ATTEMPT AT CAPTURING SOMETHING HOPEFUL THROUGH THE WORLDS WE BUILD',
         ctaText: 'DISCOVER MUSIC',
-        ctaUrl: 'https://loafykitten.cafe',
+        ctaUrl: '/about',
         ctaImage: '/images/hero-2.png',
     },
     {

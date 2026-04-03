@@ -29,8 +29,12 @@ const Footer: React.FC = () => {
 
                     {/* Copyright and Privacy Choices */}
                     <div className="text-xs mt-2">
-                        <p>©2025 MeowgicWare LLC.</p>
-                        <button type="button" className="flex items-center mt-1 hover:underline" data-cc="show-preferencesModal">
+                        <p>&copy;{new Date().getFullYear()} MeowgicWare LLC.</p>
+                        <button
+                            type="button"
+                            className="flex items-center mt-1 hover:underline"
+                            data-cc="show-preferencesModal"
+                        >
                             <span className="mr-1">
                                 <svg
                                     width="16"
@@ -66,17 +70,29 @@ const Footer: React.FC = () => {
                                 </Link>
                             </li>
                             <li>
-                                <a href="//threads.com/@meowgicware" target="_blank" className="hover:underline">
+                                <a
+                                    href="https://threads.com/@meowgicware"
+                                    target="_blank"
+                                    className="hover:underline"
+                                >
                                     Threads
                                 </a>
                             </li>
                             <li>
-                                <a href="//bsky.app/profile/loafykitten.cafe" target="_blank" className="hover:underline">
+                                <a
+                                    href="https://bsky.app/profile/loafykitten.cafe"
+                                    target="_blank"
+                                    className="hover:underline"
+                                >
                                     Bluesky
                                 </a>
                             </li>
                             <li>
-                                <a href="//youtube.com/@loafykitten" target="_blank" className="hover:underline">
+                                <a
+                                    href="https://youtube.com/@loafykitten"
+                                    target="_blank"
+                                    className="hover:underline"
+                                >
                                     YouTube
                                 </a>
                             </li>
@@ -88,19 +104,14 @@ const Footer: React.FC = () => {
                         <h3 className="text-white font-bold mb-4">STORE</h3>
                         <ul className="space-y-2 text-sm">
                             <li>
-                                <a href="//loafykitten.cafe" target="_blank" className="hover:underline">
-                                    loafykitten.cafe
-                                </a>
-                            </li>
-                            <li>
                                 <Link href="/about" className="hover:underline">
                                     About
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="hover:underline">
-                                    Games
-                                </Link>
+                                <span className="text-gray-500">
+                                    Games (Coming Soon)
+                                </span>
                             </li>
                         </ul>
                     </div>

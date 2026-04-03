@@ -20,7 +20,7 @@ export default function AboutMeowgicWare() {
         and while I may only be one person, I love to dream that I hold some of that DNA in what I do too. 
       </p>
       <p className="text-lg text-gray-300 max-w-3xl mx-auto mt-4">
-        Thank you so much for being apart of the journey, and I&apos;m grateful for everyone who&apos;s partaking on it with us! 
+        Thank you so much for being a part of the journey, and I&apos;m grateful for everyone who&apos;s partaking on it with us! 
         Any one of us can put a little meowgic into the world, even you.
       </p>
     </div>

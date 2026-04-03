@@ -22,24 +22,19 @@ export const NavLinks: NavLink[] = [
         local: true,
     },
     {
-        text: 'Be A Supporter',
+        text: 'Be a Supporter',
         local: true,
         dropdown: [
             {
-                text: 'Help Fund Me!',
-                href: '//ko-fi.com/loafykitten',
+                text: 'Help Fund MeowgicWare!',
+                href: 'https://ko-fi.com/loafykitten',
                 local: false,
             },
             {
                 text: 'Become a Patron!',
-                href: '//patreon.com/loafykitten',
+                href: 'https://patreon.com/loafykitten',
                 local: false,
             },
         ],
-    },
-    {
-        text: '【 PROJECT: loafykitten 】',
-        href: '//loafykitten.cafe',
-        local: false,
     },
 ]

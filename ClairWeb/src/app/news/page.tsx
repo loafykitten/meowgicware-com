@@ -16,7 +16,7 @@ export default function NewsPage() {
             <div
               key={index}
               className={`py-6 px-4 ${
-                index % 2 === 0 ? 'bg-slate-700' : 'bg-white text-gray-800'
+                index % 2 === 0 ? 'bg-slate-700' : 'bg-slate-800'
               }`}
             >
               <div className="max-w-4xl mx-auto">
