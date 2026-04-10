@@ -62,12 +62,14 @@ const Hero = () => {
                         <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-shadow-sm">
                             {slide.subText}
                         </p>
-                        <button
-                            className="border-1 border-zinc-400 bg-black/70 text-white py-3 px-8 text-lg uppercase font-semibold hover:bg-white hover:text-black transition-colors duration-300 cursor-pointer"
-                            onClick={() => handleCtaClick(slide.ctaUrl)}
-                        >
-                            {slide.ctaText}
-                        </button>
+                        {slide.ctaText && slide.ctaUrl ? (
+                            <button
+                                className="border-1 border-zinc-400 bg-black/70 text-white py-3 px-8 text-lg uppercase font-semibold hover:bg-white hover:text-black transition-colors duration-300 cursor-pointer"
+                                onClick={() => handleCtaClick(slide.ctaUrl!)}
+                            >
+                                {slide.ctaText}
+                            </button>
+                        ) : null}
                     </div>
                 </div>
             ))}

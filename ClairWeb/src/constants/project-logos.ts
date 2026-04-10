@@ -5,9 +5,4 @@ interface ProjectLogo {
 }
 
 export const ProjectLogos: ProjectLogo[] = [
-    {
-        href: 'https://loafykitten.cafe',
-        src: '/images/loafykitten-logo.png',
-        alt: 'Project loafykitten'
-    }
 ]

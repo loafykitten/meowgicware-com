@@ -2,6 +2,10 @@ import { ProjectLogos } from '@/constants/project-logos'
 import Image from 'next/image'
 
 const GameLogos = () => {
+    if (ProjectLogos.length === 0) {
+        return null
+    }
+
     return (
         <section className="bg-zinc-300 py-16">
             <div className="container mx-auto flex flex-col items-center space-y-8 md:flex-row md:justify-around md:space-y-0">

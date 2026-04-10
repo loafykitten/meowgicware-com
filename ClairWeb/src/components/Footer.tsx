@@ -79,22 +79,14 @@ const Footer: React.FC = () => {
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="https://bsky.app/profile/loafykitten.cafe"
-                                    target="_blank"
-                                    className="hover:underline"
-                                >
-                                    Bluesky
-                                </a>
+                                <Link href="/about" className="hover:underline">
+                                    About Ember
+                                </Link>
                             </li>
                             <li>
-                                <a
-                                    href="https://youtube.com/@loafykitten"
-                                    target="_blank"
-                                    className="hover:underline"
-                                >
-                                    YouTube
-                                </a>
+                                <Link href="/about" className="hover:underline">
+                                    About
+                                </Link>
                             </li>
                         </ul>
                     </div>
