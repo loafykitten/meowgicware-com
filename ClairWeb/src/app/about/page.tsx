@@ -10,7 +10,7 @@ export default function AboutPage() {
             title: 'Founder / Creative & Engineering Director',
             description: `
         <p>Hii! ㅤꨄ</p>
-        <p class="mt-4">I'm the big cheese behind MeowgicWare and the human behind loafykitten. I've been working with computers since I was child, and gaming has been a lifelong passion. I want to build inclusive interactive experiences, that can bring a little peace to every single one of us, one project at a time.</p>
+        <p class="mt-4">I'm the big cheese behind MeowgicWare and the human behind loafykitten. I've been working with computers since I was a child, and gaming has been a lifelong passion. I want to build inclusive interactive experiences that can bring a little peace to every single one of us, one project at a time.</p>
       `,
         },
         {

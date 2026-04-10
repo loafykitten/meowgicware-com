@@ -12,13 +12,13 @@ export const HeroSlides: HeroSlide[] = [
     {
         mainText: 'FIND YOUR HOME',
         subText:
-            'THROUGH EMOTIONALLY CRAFTED GAMES, SHARED COMMUNITY, AND A WORLD OF MAGIC',
+            'THROUGH SHARED COMMUNITY, THOUGHTFUL GAMES, AND A WORLD OF MAGIC',
         ctaImage: '/images/hero-1.png',
     },
     {
-        mainText: 'MEANINGFUL STORIES',
+        mainText: 'BUILD KIND WORLDS',
         subText:
-            'AN ATTEMPT AT CAPTURING SOMETHING HOPEFUL THROUGH THE WORLDS WE BUILD',
+            'WE MAKE WARM, WELCOMING DIGITAL SPACES FOR PEOPLE WHO NEED A LITTLE PEACE',
         ctaImage: '/images/hero-2.png',
     },
     {

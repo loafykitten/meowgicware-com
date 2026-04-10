@@ -79,26 +79,51 @@ const Footer: React.FC = () => {
                                 </a>
                             </li>
                             <li>
-                                <Link href="/about" className="hover:underline">
-                                    About Ember
-                                </Link>
+                                <a
+                                    href="https://bsky.app/profile/loafykitten.cafe"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:underline"
+                                >
+                                    Bluesky
+                                </a>
                             </li>
                             <li>
-                                <Link href="/about" className="hover:underline">
-                                    About
-                                </Link>
+                                <a
+                                    href="https://youtube.com/@loafykitten"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:underline"
+                                >
+                                    YouTube
+                                </a>
                             </li>
                         </ul>
                     </div>
 
-                    {/* Store Links */}
+                    {/* Support Links */}
                     <div>
-                        <h3 className="text-white font-bold mb-4">STORE</h3>
+                        <h3 className="text-white font-bold mb-4">SUPPORT</h3>
                         <ul className="space-y-2 text-sm">
                             <li>
-                                <Link href="/about" className="hover:underline">
-                                    About
-                                </Link>
+                                <a
+                                    href="https://ko-fi.com/loafykitten"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:underline"
+                                >
+                                    Ko-fi
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://patreon.com/c/loafykitten"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:underline"
+                                >
+                                    Patreon
+                                </a>
                             </li>
                             <li>
                                 <span className="text-gray-500">

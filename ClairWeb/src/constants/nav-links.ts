@@ -7,11 +7,6 @@ interface NavLink {
 
 export const NavLinks: NavLink[] = [
     {
-        text: 'About',
-        href: '/about',
-        local: true,
-    },
-    {
         text: 'News',
         href: '/news',
         local: true,
@@ -26,14 +21,14 @@ export const NavLinks: NavLink[] = [
         local: true,
         dropdown: [
             {
-                text: 'Learn More',
-                href: '/about',
-                local: true,
+                text: 'Ko-fi',
+                href: 'https://ko-fi.com/loafykitten',
+                local: false,
             },
             {
-                text: 'Read Our Story',
-                href: '/about',
-                local: true,
+                text: 'Patreon',
+                href: 'https://patreon.com/c/loafykitten',
+                local: false,
             },
         ],
     },

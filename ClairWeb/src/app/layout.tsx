@@ -32,13 +32,13 @@ const zain = Zain({
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://meowgicware.com'),
-    title: 'MeowgicWare - Enchanting Games | Meaningful Stories | Creative Technology',
+    title: 'MeowgicWare - Enchanting Games | Meaningful Stories | Kind Worlds',
     description:
-        'MeowgicWare, founded by Ember (loafykitten), blends software engineering with imaginative game design and heartfelt interactive experiences. Explore immersive digital projects and meaningful stories.',
+        'MeowgicWare, founded by Ember (loafykitten), builds thoughtful games and welcoming digital experiences with heart.',
     openGraph: {
-        title: 'MeowgicWare - Enchanting Games | Meaningful Stories | Creative Technology',
+        title: 'MeowgicWare - Enchanting Games | Meaningful Stories | Kind Worlds',
         description:
-            'MeowgicWare blends software engineering with imaginative game design and heartfelt interactive experiences. Explore immersive digital projects and meaningful stories.',
+            'MeowgicWare builds thoughtful games and welcoming digital experiences with heart.',
         url: 'https://meowgicware.com',
         siteName: 'MeowgicWare',
         images: [
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     twitter: {
         card: 'summary_large_image',
         title: 'MeowgicWare',
-        description: 'Enchanting Games, Meaningful Stories, Creative Technology.',
+        description: 'Enchanting Games, Meaningful Stories, Kind Worlds.',
         images: ['/images/logo-text.png'],
     },
 }
